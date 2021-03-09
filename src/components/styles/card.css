@@ -1,0 +1,56 @@
+.width {
+    width: 18rem;
+}
+.max_width1 {
+   max-width: 540px;
+}
+.container-color {
+   background: #d3f1cd;
+}
+.container-color2 {
+    background: #cdf1f1;
+ }
+ .container-color3 {
+   background: #d40a98;
+}
+.container-color4 {
+   background: #f1edc0;
+}
+.container-blue {
+   background: #f2f6f7;
+}
+.margin_center{
+  margin-left: auto;
+  margin-right: auto;
+}
+.align-center {
+  Text-align: center;
+}
+.border{
+   border:0;
+}
+.font-color-black {
+   color:#4e5253;
+}
+.font-size-longer{
+   font-size: 43px;
+}
+.font-size-2{
+   font-size: 11px;
+}
+.font-size-3{
+   font-size: 12px;
+}
+.imagen:hover {
+   filter: opacity(.7);
+}
+.contenedor:hover .imagen {
+   -webkit-transform:scale(1.3);
+   transform:scale(1.3);
+}
+.contenedor {
+   overflow:hidden;
+}
+.icon-size i{
+   font-size: 100px;
+}

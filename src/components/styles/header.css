@@ -1,0 +1,52 @@
+.background-blue-light {
+    background-color: #f2f6f7;
+}
+.background-pink {
+    background-color: #f3d6d8;
+}
+.margin-inf {
+    padding-bottom: 70px;
+} 
+.menu-aligh {
+    float: left;
+    }
+.menu-aligh li{
+    display: inline-block;
+    }
+.menu-aligh a{
+    color: #303132;
+    text-decoration: none;
+    padding: 15px;
+    }
+.menu-aligh a:hover{
+    background: #fedede;  
+    }
+.menu-aligh2 {
+    float: right;
+    }
+
+.menu-aligh2 li{
+    display: inline-block;
+    }
+.menu-aligh2 a{
+    color: #303132;
+    text-decoration: none;
+    padding: 15px;
+    }
+.menu-aligh2 a:hover{
+    background: #fedede;  
+    }
+.nav_color {
+    background-color: #e3f2fd;
+    }
+.margin-left {
+    padding-left: 60px;
+}
+.margin-right-left {
+    padding-right: 150px;
+    padding-left: 25px;
+}
+.margin-right-left-2 {
+    padding-right: 12px;
+    padding-left: 25px;
+}
