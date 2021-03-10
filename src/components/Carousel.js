@@ -6,8 +6,8 @@ function images() {
     return(
        <section>
         <div id="slide1" className="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#slide1" data-slide-to="0" class="active"></li>
+            <ol className="carousel-indicators">
+              <li data-target="#slide1" data-slide-to="0" className="active"></li>
               <li data-target="#slide1" data-slide-to="1"></li>
             </ol>  
             <div className="carousel-inner">
@@ -37,13 +37,13 @@ function images() {
                     </div>
                 </div>
             </div>
-              <a class="carousel-control-prev" href="#slide1" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
+              <a className="carousel-control-prev" href="#slide1" role="button" data-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="sr-only">Previous</span>
               </a>
-              <a class="carousel-control-next" href="#slide1" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+              <a className="carousel-control-next" href="#slide1" role="button" data-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="sr-only">Next</span>
               </a>
         </div>
         <script type="text/javascript">
