@@ -4,12 +4,21 @@ import img2 from '../images/fondo2.jpg'
 
 function images() {
     return(
-       <section>
+        /*<div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                <img src={img} className="d-block w-100" alt="..."/>
+                </div>
+                <div className="carousel-item">
+                <img src={img2} className="d-block w-100" alt="..."/>
+                </div>
+            </div>
+        </div>*/
         <div id="slide1" className="carousel slide" data-ride="carousel">
-            <ol className="carousel-indicators">
-              <li data-target="#slide1" data-slide-to="0" className="active"></li>
-              <li data-target="#slide1" data-slide-to="1"></li>
-            </ol>  
+          <div className="carousel-indicators">
+            <button type="button" data-bs-target="#slide1" data-bs-slide-to="0" className="active" arial-current="true" arial-label="Slider 1"></button>
+            <button type="button" data-bs-target="#slide1" data-bs-slide-to="0" arial-label="Slider 2"></button>  
+          </div>
             <div className="carousel-inner">
                   <div className="carousel-item active">
                     <img src={img} className="d-block w-100" alt="..." loading="lazy"/>
@@ -37,19 +46,15 @@ function images() {
                     </div>
                 </div>
             </div>
-              <a className="carousel-control-prev" href="#slide1" role="button" data-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="sr-only">Previous</span>
-              </a>
-              <a className="carousel-control-next" href="#slide1" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-              </a>
+              <button className="carousel-control-prev" type="button" data-bs-target="#slide1" data-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+                <button className="carousel-control-next" type="button" data-bs-target="#slide1" data-slide="prev">
+                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Next</span>
+                </button>
         </div>
-        <script type="text/javascript">
-        $('.carousel').carousel()
-        </script>
-        </section>
     )
 }
 export default images

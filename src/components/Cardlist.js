@@ -13,7 +13,6 @@ function list(props){
                                     img={info.img} 
                                     title={info.title}
                                     description={info.description}
-                                    id={info.id}
                                 />
                             )
                         })}

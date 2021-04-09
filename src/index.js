@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css' 
 import Home from './pages/home';
+import App from './components/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

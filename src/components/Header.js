@@ -1,6 +1,7 @@
 import React from 'react'
 import logoimg from '../images/concepts.png'
 import './styles/header.css'
+import { Link } from 'react-router-dom'
 
 const Nav = () => (
     <nav className="navbar-expand-lg background-color">
@@ -34,7 +35,7 @@ const Nav = () => (
                   <a className="nav-link" aria-current="page" href="#">Find a store</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Contact us</a>
+                  <Link className="nav-link" to="/contact">Contact us</Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#"><i className="bi bi-search"></i></a>
