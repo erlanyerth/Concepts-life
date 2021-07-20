@@ -2,10 +2,11 @@ import React from 'react'
 import Form from '../components/Form-contact'
 
 class Contact extends React.Component {
-
+    //inicializamos el state
     state = {
         form: {}
     }
+    //setea el estado del campo cada vez que se tipea
     handleChange = e => {
         this.setState({
             form: {
@@ -18,7 +19,7 @@ class Contact extends React.Component {
     render(){
         return (
             <Form
-                onChange={this.handleChange}
+                onChange={this.handleChange} //se envian por props los cambios
                 form={this.state.form}
             />
         )

@@ -1,14 +1,14 @@
 import React from 'react'
 
 class Form extends React.Component {
-    
+    //evita que se recargue la pagina al dar click al boton
     handleSubmit = e => { 
         e.preventDefault()
         console.log(this.state)
     }
     
     render(){
-        const { onChange, form } = this.props
+        const { onChange, form } = this.props //me traigo por props los datos
         return (
             <section className="container">
                 <form

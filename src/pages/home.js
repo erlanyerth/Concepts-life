@@ -9,7 +9,7 @@ import Cardslist from '../components/Cardlist';
 import '../components/styles/card.css';
 
 class Home extends React.Component {
-    constructor(props){
+   /* constructor(props){
         super(props)
         this.state = {
             data: [{
@@ -29,7 +29,21 @@ class Home extends React.Component {
                 "description": "Orci varius natoque penatibus et magnis dis parturient montes, nascetur riduculus mus."
             }]
         }
-    }
+    }*/
+        state = {
+            data: []
+        }
+        async componentDidMount(){
+            await this.fetchExercises()
+        }
+        fetchExercises = async () => {
+            let res = await fetch('http://localhost:8000/api/exercises')
+            let data = await res.json()
+
+            this.setState({
+                data
+            })
+        }
     render(){
         return (
             <div className="container-blue">
